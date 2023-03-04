@@ -10,10 +10,6 @@
     "build": "tsc",
     "prepublishOnly": "yarn build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/fpellicero/react-bottom-drawer.git"
-  },
   "keywords": [
     "react",
     "ui",
@@ -22,9 +18,6 @@
   ],
   "author": "Francesc Pellicero <fpellicero@gmail.com> (https://fpellicero.github.io)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fpellicero/react-bottom-drawer/issues"
-  },
   "homepage": "https://github.com/fpellicero/react-bottom-drawer#readme",
   "peerDependencies": {
     "react": "^18.2.0",
