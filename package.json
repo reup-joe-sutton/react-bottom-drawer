@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/fpellicero/react-bottom-drawer#readme",
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/body-scroll-lock": "^2.6.1",
