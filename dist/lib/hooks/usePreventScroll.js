@@ -32,7 +32,7 @@ function usePreventScroll(enabled, contentWrapperClass) {
         }
         var scrollableElement = document.querySelector(".".concat(contentWrapperClass));
         (0, body_scroll_lock_1.disableBodyScroll)(scrollableElement);
-        console.log("Disable body scrol");
+        // console.log("Disable body scrol");
         return function () {
             (0, body_scroll_lock_1.enableBodyScroll)(scrollableElement);
         };
