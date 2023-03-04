@@ -47,8 +47,8 @@
     "body-scroll-lock": "^3.0.1",
     "clsx": "^1.1.1",
     "lodash.debounce": "^4.0.8",
-    "react-swipeable": "^5.5.1",
-    "react-transition-group": "^4.3.0"
+    "react-swipeable": "^7.0.0",
+    "react-transition-group": "^4.4.5"
   },
   "files": [
     "dist"
