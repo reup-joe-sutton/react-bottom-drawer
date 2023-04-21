@@ -72,10 +72,6 @@ var SlideUpTransition = function (_a) {
         if (currentDeltaY >= 0) {
             return undefined;
         }
-        return {
-            transform: "translate3d(0, ".concat(currentDeltaY * -1, "px, 0)"),
-            transition: "none",
-        };
     };
     // Layout
     return (React.createElement(React.Fragment, null,

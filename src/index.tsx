@@ -62,11 +62,6 @@ const SlideUpTransition = ({
     if (currentDeltaY >= 0) {
       return undefined;
     }
-
-    return {
-      transform: `translate3d(0, ${currentDeltaY * -1}px, 0)`,
-      transition: "none",
-    };
   };
 
   // Layout
