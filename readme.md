@@ -25,6 +25,7 @@ function DemoDrawer() {
     <Drawer
       isVisible={isVisible}
       onClose={onClose}
+      velocityClose={onClose}
     >
       { ... }
     </Drawer>
