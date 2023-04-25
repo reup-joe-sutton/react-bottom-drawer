@@ -14,6 +14,7 @@ import clsx from "clsx";
 interface IProps {
   isVisible: boolean;
   onClose: () => void;
+  velocityClose: () => void;
   duration?: number;
   hideScrollbars?: boolean;
   unmountOnExit?: boolean;
@@ -27,6 +28,7 @@ const SlideUpTransition = ({
   isVisible,
   children,
   onClose,
+  velocityClose,
   unmountOnExit = true,
   mountOnEnter = true,
   duration = 250,
@@ -47,7 +49,7 @@ const SlideUpTransition = ({
       ({ velocity }) => {
         setDeltaY(0);
         if (velocity > 0.5) {
-          onClose();
+          velocityClose();
         }
       },
       500,
@@ -62,11 +64,6 @@ const SlideUpTransition = ({
     if (currentDeltaY >= 0) {
       return undefined;
     }
-
-    return {
-      transform: `translate3d(0, ${currentDeltaY * -1}px, 0)`,
-      transition: "none",
-    };
   };
 
   // Layout

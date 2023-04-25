@@ -14,6 +14,7 @@ function Demo() {
         <Drawer
           isVisible={isOpen}
           onClose={() => setIsOpen(false)}
+          velocityClose={() => setIsOpen(false)}
           duration={250}
           hideScrollbars={true}
           className="drawer"
