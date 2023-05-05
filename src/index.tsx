@@ -21,7 +21,7 @@ interface IProps {
   mountOnEnter?: boolean;
   className?: string;
   backdropClassname?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const SlideUpTransition = ({
