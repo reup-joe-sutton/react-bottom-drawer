@@ -26,7 +26,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var body_scroll_lock_1 = require("body-scroll-lock");
 function usePreventScroll(enabled, contentWrapperClass) {
-    React.useLayoutEffect(function () {
+    var useIsomorphicLayoutEffect = typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
+    useIsomorphicLayoutEffect(function () {
         if (typeof document === "undefined" || !enabled) {
             return;
         }
